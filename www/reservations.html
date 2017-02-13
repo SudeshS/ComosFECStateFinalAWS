@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+				
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400" rel="stylesheet">
+				
+				<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+				<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	
+		<link rel="stylesheet" href="css/stylesheet.css" text="text/css">
+			
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <link rel='stylesheet' href='dependencies/fullcalendar-3.1.0/fullcalendar.css' />
+    <link rel='stylesheet' href='dependencies/fullcalendar-scheduler-1.5.0/scheduler.css' />
+    <script src='dependencies/fullcalendar-3.1.0/lib/jquery.min.js'></script>
+    <script src='dependencies/fullcalendar-3.1.0/lib/moment.min.js'></script>
+    <script src='dependencies/fullcalendar-3.1.0/fullcalendar.js'></script>
+    <script src= 'dependencies/fullcalendar-scheduler-1.5.0/scheduler.js'></script>
+    <link rel='stylesheet' href= 'dependencies/jquery-ui-1.12.1.custom/jquery-ui.css' />
+  <!-- THAT FAILED
+          <link rel= 'stylesheet' href= 'dependencies/fullcalendar-master/src/main.css' />
+  -->
+  <script type= "text/javascript">
+
+  $(document).ready(function() {
+
+      // page is now ready, initialize the calendar...
+
+      $('#calendar').fullCalendar({
+          // options and callbacks here
+          theme: true,
+          schedulerLicenseKey: 'CC-Attribution-NonCommercial-NoDerivatives',
+
+          height: 800,
+
+        dayClick: function(date, jsEvent, view) {
+
+                  //alert('Clicked on: ' + date.format());
+
+                 $(this).css('background-color', 'red');
+
+              },
+
+      });
+
+  });  
+
+</script>
+
+<style>
+
+
+
+
+
+</style>
+
+</head>
+
+<body>
+
+	<div id= "navbar" class="container col-xs-12" style="background-color: rgba(0, 0, 0, 0.7);">
+		<div class="row">
+			<div class=" col-md-2 hidden-xs hidden-sm linkdivs">
+			<div class= "hover_div"><a class= "one" href="attractions.html"> Attractions</a></div>
+			</div>
+			<div class="col-md-2 hidden-xs hidden-sm linkdivs ">
+			<div class= "hover_div"><a class= "one"  href="snackbar.html"> Snackbar</a></div>
+			</div>
+			<div class=" col-md-4 col-xs-6 " id="logocontainer" style= "height: 70px;">
+			<a href="index.html"><img src="img/CosmosLogoVector.svg" alt= "logo" class = "centerlogo"></img></a>
+			</div>
+			<div class="col-md-2 hidden-xs hidden-sm linkdivs">
+			<div class= "hover_div"><a class= "one" href="">Reservations</a></div>
+			</div>
+			<div class=" col-md-2 hidden-xs hidden-sm linkdivs">
+			<div class= "hover_div"><a class= "one" href="contactus.html">Contact Us</a></div>
+			</div>
+			<div class=" col-xs-6  Toggle">
+			<div id= "menuIcon"><span class="glyphicon glyphicon-menu-hamburger"></span></div>
+			</div>
+		</div>
+
+		<div id= "myDIV" class= "row hidden-lg hidden-md hidden-xl">
+			<div  class= "row">
+				<div class= "col-xs-12  togglelinkdivs">
+				<a class= "one" href= "attractions.html">ATTRACTIONS</a>
+				</div>
+			</div>
+			<div  class= "row">
+				<div class= "col-xs-12  togglelinkdivs">
+				<a class= "one" href="snackbar.html">SNACKBAR</a>
+				</div>
+			</div>
+			<div  class= "row">
+				<div class= "col-xs-12  togglelinkdivs">
+				<a class= "one" href="reservations.html">RESERVATIONS</a>
+				</div>
+			</div>
+			<div  class= "row">
+				<div class= "col-xs-12  togglelinkdivs">
+				<a class= "one" href="contactus.html">CONTACT US</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+  <div class="calendarContainer">
+
+    <div class="calendar" id='calendar'></div>
+
+  </div>
+
+
+
+
+</body>
+
+
+
+</html>

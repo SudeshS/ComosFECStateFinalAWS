@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+	
+		
+		<head>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width = device-width, initial-scale = 1">
+		<title> Cosmos  </title>
+			
+		
+				<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+				
+				<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400" rel="stylesheet">
+				
+				<!-- Latest compiled and minified CSS -->
+				<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+				<!-- Optional theme -->
+				<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+				
+				
+				
+			
+				
+				
+				<link rel="stylesheet" href="css/stylesheet.css" text="text/css">
+			
+				<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+		</head>
+
+
+
+
+	<body>
+
+	
+	<div id= "navbar" class="container col-xs-12" style= "background-color: rgba(0, 0, 0, 0.8);">
+		<div class="row">
+			<div class=" col-md-2 hidden-xs hidden-sm linkdivs">
+			<div class= "hover_div"><a class= "one" href="attractions.html"> Attractions</a></div>
+			</div>
+			<div class="col-md-2 hidden-xs hidden-sm linkdivs ">
+			<div class= "hover_div"><a class= "one"  href="snackbar.html"> Snackbar</a></div>
+			</div>
+			<div class=" col-md-4 col-xs-6 " id="logocontainer" style="height: 70px;">
+			<a href="index.html"><img src="img/CosmosLogoVector.svg" alt= "logo" class = "centerlogo"></img></a>
+			</div>
+			<div class="col-md-2 hidden-xs hidden-sm linkdivs">
+			<div class= "hover_div"><a class= "one" href="">Reservations</a></div>
+			</div>
+			<div class=" col-md-2 hidden-xs hidden-sm linkdivs">
+			<div class= "hover_div"><a class= "one" href="contactus.html">Contact Us</a></div>
+			</div>
+			<div class=" col-xs-6  Toggle">
+			<div id= "menuIcon"><span class="glyphicon glyphicon-menu-hamburger"></span></div>
+			</div>
+		</div>
+
+		<div id= "myDIV" class= "row hidden-lg hidden-md hidden-xl">
+			<div  class= "row">
+				<div class= "col-xs-12  togglelinkdivs">
+				<a class= "one" href= "attractions.html">ATTRACTIONS</a>
+				</div>
+			</div>
+			<div  class= "row">
+				<div class= "col-xs-12  togglelinkdivs">
+				<a class= "one" href="snackbar.html">SNACKBAR</a>
+				</div>
+			</div>
+			<div  class= "row">
+				<div class= "col-xs-12  togglelinkdivs">
+				<a class= "one" href="">RESERVATIONS</a>
+				</div>
+			</div>
+			<div  class= "row">
+				<div class= "col-xs-12  togglelinkdivs">
+				<a class= "one" href="contactus.html">CONTACT US</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+	
+	<div class="parallax-window-3" data-parallax="scroll" data-image-src="img/contact.jpg">
+		<div class = "col-xs-12" id= "opening_text" style="top: 25%;">
+			<div id= "text_container">CONTACT US</div>
+		</div>
+	</div>
+	
+	
+	<div id= "About_Us" class= "container col-xs-12">
+		<h1>WE LOVE FEEDBACK</h1>
+	</div>
+
+	
+	
+	
+	
+	<div id="Contact_Us_Top" class= "container col-xs-12" >
+	
+		<div class= "row">
+	
+			<div class= "form_container col-sm-6">
+				
+				
+				<form  action="action_page.php">
+						
+					<div class="first_container" >
+						<label >First Name</label>
+						<input type="text" class="fname" name="firstname">
+					</div>
+					
+					<div class= "last_container"style= >
+						<label>Last Name</label>
+						<input type="text" class="lname" name="lastname">
+					</div>
+					
+					<div class="email_container" >
+						<label>Email</label>
+						<input type="text" class="email" name="firstname">
+					</div>
+					
+					<div class="message_container" >
+						<label>Message</label>
+						<textarea class="message"></textarea>
+					</div>
+					
+					<input type="submit" value="Submit" id= "submit_button">
+					
+				</form>
+	
+			</div>
+	
+			
+			<div class= "map_container col-sm-6">
+			
+				
+				<div id="googleMap" ></div>
+
+			
+			</div>
+	
+	
+		</div>
+
+	
+	</div>
+	
+	<div id= "Contact_Icons_Container" class= "col-xs-12">
+
+
+		<div class= "row">
+
+
+
+			
+
+			<div class = "Contact_Icons col-sm-4" >
+
+
+
+				<img style = "width: 180px;" src="img/ContactPhone.png" alt="lasertag" >
+
+					<h3>(253)-712-8768</h3>
+
+
+
+			</div>
+
+			
+			
+			<div class = "Contact_Icons col-sm-4">
+
+
+
+				<img style = "width: 180px;" src="img/ContactMarker.png" alt="cake" >
+
+				<h3>8726 6th Avenue <br> Tacoma, Washington <br> 98406</h3>
+
+			</div>
+
+			
+			
+
+			<div class = "Contact_Icons col-sm-4">
+
+
+				<img  style = "width: 180px;" src="img/ContactMail.png " alt="bowling" >
+
+				<h3>cosmosfec@gmail.com</h3>
+
+			</div>
+
+			
+
+		
+
+			
+
+
+		</div>
+
+
+
+
+	</div>
+
+	
+	
+	
+	
+	
+	<div class= "footer container col-xs-12">
+	
+		<div class= "row">
+		
+		
+		
+			<div class= "footer_links col-sm-4" >
+		
+			<a class="two" href=""><h6>Home</h6></a>
+			<a class="two" href=""><h6>Attractions</h6></a>
+			<a class="two" href=""><h6>Reservations</h6></a>
+			<a class="two" href=""><h6>Snackbar</h6></a>
+			<a class="two" href=""><h6>Contact Us</h6></a>
+			
+			</div>
+		
+		
+			<div class= "footer_media col-sm-4">
+				
+				<div class= "row">
+				
+					<div class= "media_icon_container col-xs-3">
+						
+						<a href="https://www.instagram.com/cosmosfec/?hl=en"><img src="img/instagram.png" alt="instagram" style= "width: 50px;"></img></a>
+						
+					
+						
+					</div>
+					
+					<div class= "media_icon_container col-xs-3">
+						
+						<a href="https://www.facebook.com/search/top/?q=cosmos%20family%20entertainment%20center"><img src="img/facebook.png" alt="instagram" style= "width: 50px;"></img></a>
+						
+					</div>
+					
+					<div class= "media_icon_container col-xs-3">
+						
+						<a href="https://twitter.com/CosmosFec"><img src="img/twitter.png" alt="instagram" style= "width: 50px;"></img></a>
+						
+					</div>
+					
+					<div class= "media_icon_container col-xs-3">
+						
+						<a href="https://plus.google.com/105896305869198218545"><img src="img/google.png" alt="instagram" style= "width: 50px;"></img></a>
+						
+					</div>
+					
+				
+				</div>
+		
+			</div>
+		
+		
+		
+			<div class= "footer_hours col-sm-4">
+			
+			<h6> Hours of Operation</h6>
+				
+				
+		<table class="Hours_Table">
+			<tbody>
+				<tr>
+					<td>Monday-Thursday</td>
+					<td>10am - 10pm</td>
+				</tr>
+				<tr>
+					<td>Friday</td>
+					<td>10am - 11pm</td>
+				</tr>
+				<tr>
+					<td>Saturday</td>
+					<td>10am - 12pm</td>
+				</tr>
+				<tr>
+					<td style="border-bottom-style: none;">Sunday</td>
+					<td style="border-bottom-style: none;">9am - 10pm</td>
+				</tr>
+			</tbody>
+		</table>
+
+				
+			</div>
+		
+		</div>
+	
+	</div>
+	
+	
+	
+	
+	
+
+	
+	
+	<script type= "text/javascript">
+
+	$('#menuIcon').click(function(e){
+					$('#myDIV').toggle();
+					e.stopPropagation();
+			});
+			$(document).click(function(e){
+			    $("#myDIV").hide();
+			});
+
+	function myMap() {
+	  var myCenter = new google.maps.LatLng(47.255339, -122.484789);
+  var mapCanvas = document.getElementById("googleMap");
+  var mapOptions = {center: myCenter, zoom: 9};
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+  var marker = new google.maps.Marker({position:myCenter});
+  marker.setMap(map);
+
+  // Zoom to 9 when clicking on marker
+  google.maps.event.addListener(marker,'click',function() {
+    map.setZoom(11);
+    map.setCenter(marker.getPosition());
+  });
+}
+	
+	
+
+	
+	</script>
+	
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDweY9wmlNzvst9pFu8rCMOTItatw_YYJg&callback=myMap"></script>
+		
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+	<script src="dependencies/parallax.min.js"></script>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.4/SmoothScroll.min.js"></script>		
+	<!-- Latest compiled and minified JavaScript (j.query) -->
+	
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
+	
+	<!-- Latest compiled and minified JavaScript -->
+	
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	
+	
+	
+	
+	
+	</body>
+
+
+
+
+
+
+	
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

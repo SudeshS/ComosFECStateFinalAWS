@@ -1,0 +1,865 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+#navbar {
+	position: fixed;
+	top: 0;
+	background-color: rgba(0, 0, 0, 0.0);
+	border-radius: 0px;
+	padding: 0px;
+	z-index: 100;
+	height: 70px;
+	overflow-y: visible;
+}
+
+div.linkdivs {
+	height: 70px;
+	line-height: 70px;
+	text-align: center;
+	margin: 0px;
+	display: block;
+	
+}
+
+.Toggle {
+	height: 70px;
+	line-height: 70px;
+	text-align: center;
+	margin: 0px;
+	display: none;
+}
+
+div.hover_div {
+	height: 70px;
+	line-height: 70px;
+	text-align: center;
+	display: inline-block;
+}
+
+div.hover_div:hover {
+	border-bottom: solid #ff6600;
+}
+
+div.togglelinkdivs {
+	height: 70px;
+	line-height: 70px;
+	text-align: center;
+	margin: 0px;
+}
+
+#logocontainer {
+	overflow: hidden;
+	height: 200px;
+	padding: 0px;
+	text-align: center;
+	margin: 0px;
+	transition: height 1s;
+
+}
+
+.centerlogo {
+	float: center;
+	height: 100%;
+}
+
+#myDIV {
+	width: 100vw;
+	border-radius: 0px;
+	padding: 0px;
+	background-color: rgba(0, 0, 0 ,0.7);
+	display: none;
+}
+
+#menuIcon {
+	background-color: rgba(0, 0, 0, 0.0);
+	color: white;
+	cursor: pointer;
+}
+
+a.one {
+	font-family: 'Stellar-light', sans-serif;
+	font-size: 16px;
+	letter-spacing: 1px;
+	color: white;
+	text-decoration: none;
+}
+
+a.one:link {
+	color: #ff6600;
+	text-decoration: none;
+}
+
+a.one:visited {
+	color: #ff6600;
+	text-decoration: none;
+}
+
+a.one:hover {
+	color: #ff6600;
+	text-decoration: none;
+}
+
+a.one:active {
+	color: #ff6600;
+	text-decoration: none;
+}
+
+#opening_text {
+	padding: 0;
+	position: absolute;
+	top: 37%;
+	left: 0;
+	text-align: center;
+	height: auto;
+	overflow: hidden;
+}
+
+#text_container {
+	font-family: 'Stellar-light', sans-serif;
+	color: white;
+	font-style: normal;
+	letter-spacing: 15px;
+	font-size: 100px;
+	overflow: hidden;
+	background-color: rgba(0, 0, 0, 0);
+	width: auto;
+	padding-top: 0;
+	display: inline-block;
+	position: aboslute;
+}
+
+.arrow_container {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+}
+
+.Down_Arrow {
+	color: white;
+	padding: 0;
+	font-size: 2.5vw;
+	background-color: rgba(0, 0, 0, 0.0);
+	text-align: center;
+}
+
+#About_Us {
+	padding: 0;
+	padding-bottom: 15px;
+	display: block;
+	text-align: center;
+	overflow: hidden;
+	clear: both;
+}
+
+#About_Us > h1 {
+	font-family: 'Stellar-light', sans-serif;
+	color: Black;
+	font-style: normal;
+	font-size: 60px;
+}
+
+#About_Us > h1::after {
+	display: block;
+	content: '';
+	width: 20%;
+	height: 3px;
+	background: #ff6600;
+	position: absolute;
+	bottom: 0;
+	left: 40%;
+	right: 0;
+}
+
+div.example {
+	height: 2000px;
+	width: 100%;
+	clear: both;
+}
+
+#myCarousel {
+	margin-top: 130px;
+	clear: both;
+	
+}
+
+.carousel-control .icon-next {
+	right: 10px;
+}
+
+.carousel-control .icon-prev {
+	left: 10px;
+}
+
+#Carousel_Marketing {
+	clear: both;
+	min-height: 200px;
+	min-height: 200px;
+	width: 100%;
+}
+
+.carousel-caption {
+    text-align:center;
+	margin-bottom: 10px;
+
+}
+
+.carousel-caption > h1 {
+	font-family: 'Stellar-light', sans-serif;
+	font-size: 2.5vw;
+	color: white;
+}
+#At_Cosmos {
+	margin-top: 20px;
+	min-height: 500px;
+	background-color: #212121;
+}
+
+.At_Cosmos_Text {
+	min-height: 500px;
+}
+
+#Pic_Container {
+	
+	height: 100%;
+	width: 100%;
+	position: relative;
+	left:0;
+	bottom: 0;
+	margin-top: 100px;
+	margin-bottom: 100px;
+	clear: both;
+	text-align: center;
+	
+}
+
+.At_Cosmos_Logo {
+	float: center;
+	width: 300px;
+	max-width: 100%;
+
+}
+
+#At_Cosmos_Pic > h3 {
+	font-family: 'Stellar-light' , sans-serif;
+	color: white;
+	font-size: 40px;
+	padding-bottom: 20px;
+}
+
+#At_Cosmos_Pic > h3::after {
+	display: block;
+	content: '';
+	width: 15%;
+	height: 1px;
+	background: #ff6600;
+	position: relative;
+	top: 30px;
+}
+
+.Tile_Top {
+	width: 100%;
+	min-height: 250px;
+	height: 50%;
+	position: relative;
+	top: 0px;
+	left: 0px;
+	text-align: center;
+	padding: 20px;
+}
+
+.Tile_Bottom {
+	min-height: 250px;
+	padding: 5px;
+	width: 100%;
+	height: 50%;
+	position: relative;
+	bottom: 0px;
+	left: 0px;
+	padding: 20px;
+	padding-bottom: 0px;
+	text-align: center;
+}
+
+h4 {
+	font-family: 'Stellar-light' , sans-serif;
+	color: #ff6600;
+	font-size: 30px;
+	padding-top: 0px;
+	padding-bottom: 15px;
+	text-align: center;
+}
+
+.At_Paragraphs {
+	font-family: 'Stellar-light' , sans-serif;
+	color: white;
+	font-size: 17px;
+	text-align: left;
+	padding-left: 20px;
+	width: 100%;
+	position: aboslute;
+	margin: 0;
+}
+
+#Tile_Container {
+	clear: both;
+	border: solid white 1px;
+	background: #212121;
+	margin-top: 50px;
+}
+
+.Navigation_Tiles {
+	position: relative;
+	background-color: #212121;
+	border: solid white 1px;
+	height: 100%;
+	text-align: center;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	overflow: hidden;
+}
+
+.icons {
+	width: 200px;
+}
+
+.Navigation_Tiles:hover {
+	background-color: rgba(255, 102, 0, 0.8);
+}
+
+.Tiles_Title {
+	width: 100%;
+	font-family: 'Stellar-light', sans-serif;
+	font-size: 40px;
+	color: white;
+	text-align: center;
+	vertical-align: middle;
+	position: absolute;
+	top: 40%;
+	display: none;
+	left: 0;
+}
+
+.Navigation_Tiles:hover .Tiles_Title {
+	display: block;
+	}
+
+#Reserve_Now {
+	clear: both;
+	background-color: #212121;
+	height: 460px;
+	border-top: solid white 1px;
+	text-align: center;
+	padding-top: 80px;
+}
+
+#Reserve_Now > h2 {
+	font-family: 'Stellar-light', sans-serif;
+	font-size: 60px;
+	color: white;
+}
+
+#Reserve_Now > h4 {
+	padding-top: 30px;
+	padding-bottom: 25px;
+	font-family: 'Stellar-light', sans-serif;
+	font-size: 30px;
+	color: white;
+
+				}
+
+#Reserve_Now > a {
+	font-family: 'Stellar-light', sans-serif;
+	color: white;
+	font-size: 16px;
+	letter-spacing: 1px;
+}
+
+#Party_Button {
+	display: inline-block;
+	top: 0px;
+	padding: 20px;
+	background-color: #ff6600;
+	position: relative;
+}
+
+.parallax-window {			
+	min-height: 100vh;
+	background: transparent;
+	
+}
+								
+.parallax-window-2 {
+	min-height: 80vh;
+	background: transparent;
+}
+
+.parallax-window-3 {
+	min-height:65vh;
+	background: transparent;
+	
+	
+}
+
+.attraction_text {
+	padding: 0;
+	line-height: 80vh;
+	text-align: center;
+	height: auto;
+	overflow: hidden;
+	font-family: 'Stellar-light', sans-serif;
+	color: white;
+	font-style: normal;
+	letter-spacing: 15px;
+	font-size: 60px;
+}
+
+.long_attraction_text {
+	padding: 0;
+	line-height: 80vh;
+	text-align: center;
+	height: auto;
+	overflow: hidden;
+	font-family: 'Stellar-light', sans-serif;
+	color: white;
+	font-style: normal;
+	letter-spacing: 15px;
+	font-size: 60px;
+}
+			
+.middle-2 {
+	min-height: 20vh;
+	text-align: center;
+	padding: 50px;
+}
+
+.Attractions_Marketing {
+	height: 100%;
+	width: auto;
+	padding: 0px;	
+}
+
+.Attractions_Marketing > h1 {
+	font-family: 'Stellar-light', sans-serif;
+	color: Black;
+	font-style: normal;
+	font-size: 40px;
+	margin: 0;
+}
+
+.Attractions_Marketing > h1::after {
+	display: block;
+	content: '';
+	width: 10%;
+	height: 3px;
+	background: #ff6600;
+	position: relative;
+	margin-top: 15px;
+	bottom: 0;
+	left: 45%;
+	right: 0;
+}
+
+.Attractions_Marketing > h3 {
+	font-family: 'Stellar-light', sans-serif;
+	font-size: 25px;
+	color: black;
+	font-weight: 500;
+	padding: 10px;
+}
+
+.footer {
+	min-height: 220px;
+	width: 100%;
+	clear: both;
+	position: relative;
+	background: #212121;
+	margin-top: 1px;
+}
+
+.footer_links {
+	height: 220px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	text-align: center;
+}
+
+a.two {
+	font-family: 'Stellar-light', sans-serif;
+	letter-spacing: 1px;
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+a.two:link {
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a.two:visited {
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a.two:hover {
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a.two:active {
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.footer_media {
+	height: 220px;
+	text-align: center;
+}
+
+.media_icon_container {
+	height: 220px;
+	line-height: 220px;
+	text-align: center;
+}
+
+.footer_hours {
+	height: 220px;
+	text-align: center;
+	float: center;
+}
+
+.footer_hours > h6 {
+	padding-top: 5px;
+	margin-bottom: 0px;
+	font-family: 'Stellar-light', sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	color: white;
+}
+
+.Hours_Table {
+	margin-left: auto;
+	margin-right: auto;
+	width:auto;
+	font-family: 'Stellar-light', sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	width: 70%;
+	position: relative;
+	top: 20px;
+	color: white;
+}
+
+table.Hours_Table td {
+	border-top-style: solid;
+	border-top-width: 1px;
+	border-top-color:  white;
+	border-bottom-color: white;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	padding: 5px;
+	color: white;
+}
+
+
+/*  Reservations Styling   */
+
+.calendarContainer {
+	margin-top: 10px;
+}
+
+
+#Contact_Us_Top{
+	margin-top: 3%;
+	
+}
+
+.form_container {
+	text-align: center;
+	height: 400px;
+}
+
+form {
+	height: 400px;
+}
+
+.first_container{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	float: left; 
+	width: 50%;
+	padding: 10px;
+}
+
+label {
+	display: block;
+	font-size: 13px;
+	font-family: 'Stellar-light', sans-serif;
+	color: black;
+	letter-spacing: 1px;
+}
+
+input.fname {
+	position: relative;
+	border-width: 1px;
+	width: 80%;
+	height: 40px;
+	margin: 0px;
+	border-radius: 3px;
+	background-color: rgb(250, 250, 250);
+	border-color: rgb(204, 204, 204);
+	box-sizing: border-box;
+
+}
+
+.last_container {
+	float: left; 
+	width: 50%; 
+	padding: 10px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+input.lname {
+	position: relative;
+	border-width: 1px;
+	width: 80%;
+	height: 40px;
+	margin: 0px;
+	border-radius: 3px;
+	background-color: rgb(250, 250, 250);
+	border-color: rgb(204, 204, 204);
+	box-sizing: border-box;
+}
+
+.email_container {
+	width: 100%;
+	padding: 10px;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+input.email {
+	position: relative;
+	width: 90%;
+	border-width: 1px;
+	height: 40px;
+	margin: 0px;
+	border-radius: 3px;
+	background-color: rgb(250, 250, 250);
+	border-color: rgb(204, 204, 204);
+	box-sizing: border-box;
+}
+
+.message_container {
+	width: 100%;
+	padding: 10px;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+textarea{
+	position: relative;
+	border-width: 1px;
+	width: 90%;
+	height: 100px;
+	margin: 0px;
+	border-radius: 3px;
+	background-color: rgb(250, 250, 250);
+	border-color: rgb(204, 204, 204);
+	box-sizing: border-box;
+	resize:none;	
+}
+
+input[type=submit] {
+	
+	width: 25%;
+    background-color: #212121;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+.map_container {
+	text-align: center;
+	margin-top: 30px;
+	padding-left: 2.5%;
+	padding-right: 2.5%;
+}
+
+#googleMap {
+	width:90%; 
+	height:380px; 
+	filter: grayscale();	
+}
+
+#Contact_Icons_Container {
+	min-height: 500px;
+	clear: both;
+}
+
+.Contact_Icons {
+	text-align: center;
+	padding-top: 100px;
+	
+}
+
+.Contact_Icons > h3 {
+	
+	font-family: 'Stellar-light', sans-serif;
+	color: #ff6600;
+	font-size: 20px;
+	position: aboslute;
+	bottom: 0;
+	
+}
+
+
+
+
+@font-face {
+	font-family: Stellar-light;
+	src: url(../fonts/Stellar-light.otf);
+}
+
+@media screen and (max-width: 1100px) {
+	
+	#Pic_Container {
+		top: 60px;
+	}
+}
+				
+@media screen and (max-width: 992px) {
+	
+	#navbar {
+		background-color: rgba(0, 0, 0, 0.7);
+	}
+	
+	#logocontainer {
+		height: 70px;
+	}
+	
+	#text_container {
+		font-size: 7vw;
+	}
+	
+	#About_Us > h1 {
+		font-size: 6vw;
+	}
+	
+	div.linkdivs {
+		line-height: 70px;
+		height: 70px;
+		display: none;
+	}
+	
+	.Toggle {
+		display: block;
+	}
+	
+	h1 {
+		font-size: 6vw;
+	}
+	
+	.At_Paragraphs {
+		font-size: 14px;
+	}
+	
+	.At_Cosmos_Logo {
+		width: 200px;
+	}
+	
+	.Hours_Table {
+		font-size: 13px;
+	}
+	
+}
+
+@media screen and (max-width: 890px ) {
+	
+	.icons {
+		width: 160px;
+	}
+
+}
+	
+@media screen and (max-width: 767px ) {
+	
+	#At_Cosmos {
+		min-height: 0;
+	}
+	
+	#At_Cosmos_Pic {
+		min-height: 0;
+	}
+	
+	.At_Cosmos_Text {
+		min-height: 0;
+	}
+	
+	.At_Cosmos_Logo {
+		width: 200px;
+	}
+	
+	#Pic_Container {
+		top: 0;
+	}
+	
+	.Tile_Top {
+		min-height: 200px;
+	}
+	
+	.Tile_Bottom {
+		min-height: 200px;
+	}
+	
+	.At_Paragraphs {
+		font-size: 17px;
+	}
+	
+	#Reserve_Now {
+		padding-top: 20px;
+	}
+	
+	#Reserve_Now > h2 {
+		font-size: 40px;
+	}
+	
+	#Reserve_Now > h4 {
+		font-size: 25px;
+	}
+	
+	#googleMap {
+		width: 100%
+	}
+	.map_container {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	
+	.long_attraction_text {
+		
+		font-size: 40px;
+		
+	}
+}
+	
+@media screen and (max-width: 500px) {
+	
+	img {
+		width: 75%;
+	}
+	
+}
