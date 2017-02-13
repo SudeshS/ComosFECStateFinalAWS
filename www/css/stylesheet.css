@@ -144,6 +144,11 @@ a.one:active {
 	text-align: center;
 }
 
+.scroll_button {
+	background-color: rgba(0, 0, 0, 0.0);
+	border: none;
+}
+
 #About_Us {
 	padding: 0;
 	padding-bottom: 15px;

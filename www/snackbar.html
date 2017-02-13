@@ -92,7 +92,7 @@
 		
 		<div class = "container arrow_container col-xs-12">
 			<div class= "row  Down_Arrow">
-				<span class="glyphicon glyphicon-menu-down">
+				<button class="scroll_button" type="button"><span class="glyphicon glyphicon-menu-down"></button>
 			</div>
 		</div>
 	
@@ -270,7 +270,11 @@
 			    $("#myDIV").hide();
 			});
 
-	
+	$("button").click(function() {
+    $('html,body').animate({
+        scrollTop: $(".Attractions_Marketing").offset().top -90},
+        'slow');
+	});
 	
 
 	
