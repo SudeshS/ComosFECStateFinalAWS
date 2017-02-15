@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	
+
+    <link rel='stylesheet' href='dependencies/fullcalendar-3.1.0/fullcalendar.css' />
+    <script src='dependencies/fullcalendar-3.1.0/lib/jquery.min.js'></script>
+    <script src='dependencies/fullcalendar-3.1.0/lib/moment.min.js'></script>
+    <script src='dependencies/fullcalendar-3.1.0/fullcalendar.js'></script>
+    <link rel='stylesheet' href= 'dependencies/jquery-ui-1.12.1.custom/jquery-ui.css' />
+
+
+  <script type= "text/javascript">
+
+	
+		$(document).ready(function() {
+
+      // page is now ready, initialize the calendar...
+
+
+
+		$('#calendar').fullCalendar({
+			
+			
+
+    dayClick: function(date, jsEvent, view) {
+
+        //alert('Clicked on: ' + date.format());
+
+       
+
+        // change the day's background color just for fun
+        $(this).css('background-color', 'red');
+
+    }
+});
+
+  }); 
+ 
+   
+
+</script>
+<style>
+</style>
+</head>
+<body>
+
+    <div class="calendar" id='calendar' style="width:50%;"></div>
+
+
+</body>
+</html>

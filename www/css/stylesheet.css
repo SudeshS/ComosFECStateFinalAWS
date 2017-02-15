@@ -407,6 +407,7 @@ h4 {
 	
 }
 
+
 .attraction_text {
 	padding: 0;
 	line-height: 80vh;
@@ -573,11 +574,7 @@ table.Hours_Table td {
 }
 
 
-/*  Reservations Styling   */
 
-.calendarContainer {
-	margin-top: 10px;
-}
 
 #Contact_Us_Top{
 	margin-top: 3%;
@@ -688,7 +685,7 @@ input[type=submit] {
     background-color: #212121;
     color: white;
     padding: 14px 20px;
-    margin: 8px 0;
+    margin: 8px ;
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -729,7 +726,73 @@ input[type=submit] {
 	
 }
 
+/*  Reservations Styling   */
 
+.reservationForm {
+	text-align: center;
+}
+
+.img-responsive {
+	max-width: 100%;
+	height: 400px;
+	padding: 10px;
+}
+
+.PhoneResForm_container{
+	margin-top: 20px;
+	margin-bottom: 20px;
+ 
+	width: 100%;
+	padding: 10px;
+}
+
+
+
+.PartyResForm_container{
+	margin-top: 20px;
+	margin-bottom: 20px;
+ 
+	width: 100%;
+	padding: 10px;
+}
+
+
+.Reservations_Marketing {
+	height: 100%;
+	width: auto;
+	padding: 0px;	
+}
+
+.Reservations_Marketing > h1 {
+	font-family: 'Stellar-light', sans-serif;
+	color: Black;
+	font-style: normal;
+	font-size: 40px;
+	margin: 0;
+	text-align: center; 
+}
+
+
+
+.Reservations_Marketing > h3 {
+	font-family: 'Stellar-light', sans-serif;
+	font-size: 25px;
+	color: black;
+	font-weight: 500;
+	padding: 10px;
+}
+
+.Reservations_Marketing > h1::after {
+	display: block;
+	content: '';
+	width: 100%;
+	height: 3px;
+	background: #ff6600;
+	position: relative;
+	margin-top: 15px;
+	bottom: 0;
+	align-content: center;
+}
 
 
 @font-face {

@@ -22,33 +22,49 @@
     <script src='dependencies/fullcalendar-3.1.0/fullcalendar.js'></script>
     <script src= 'dependencies/fullcalendar-scheduler-1.5.0/scheduler.js'></script>
     <link rel='stylesheet' href= 'dependencies/jquery-ui-1.12.1.custom/jquery-ui.css' />
+	<script src="dependencies/parallax.min.js"></script>
   <!-- THAT FAILED
           <link rel= 'stylesheet' href= 'dependencies/fullcalendar-master/src/main.css' />
   -->
   <script type= "text/javascript">
-
-  $(document).ready(function() {
+  $.noConflict();
+ /* jQuery( document ).ready(function( $ ) {
+	
+		$(document).ready(function() {
 
       // page is now ready, initialize the calendar...
 
-      $('#calendar').fullCalendar({
-          // options and callbacks here
-          theme: true,
-          schedulerLicenseKey: 'CC-Attribution-NonCommercial-NoDerivatives',
+		$('#calendar').fullCalendar({
+			// options and callbacks here
+			aspectRatio: 1.5,
+			theme: true,
+			schedulerLicenseKey: 'CC-Attribution-NonCommercial-NoDerivatives',
+		
+			height: 600,
+			
 
-          height: 800,
+			dayClick: function(date, jsEvent, view) {
 
-        dayClick: function(date, jsEvent, view) {
+					var clientSelectedDate;
 
-                  //alert('Clicked on: ' + date.format());
+					//alert('Clicked on: ' + date.format());
+					
+					$(this).css('background-color', 'red');
 
-                 $(this).css('background-color', 'red');
+					clientSelectedDate = date.format();
 
-              },
+					$.ajax({url:"reservations.php", method:"POST", async:false,
+							data:{SelectedDate: clientSelectedDate}
+					});
+					
 
-      });
+				},
 
-  });  
+		});
+
+  }); 
+  });
+   */
 
 </script>
 
@@ -76,7 +92,7 @@
 			<a href="index.html"><img src="img/CosmosLogoVector.svg" alt= "logo" class = "centerlogo"></img></a>
 			</div>
 			<div class="col-md-2 hidden-xs hidden-sm linkdivs">
-			<div class= "hover_div"><a class= "one" href="">Reservations</a></div>
+			<div class= "hover_div"><a class= "one" href="reservations.html">Reservations</a></div>
 			</div>
 			<div class=" col-md-2 hidden-xs hidden-sm linkdivs">
 			<div class= "hover_div"><a class= "one" href="contactus.html">Contact Us</a></div>
@@ -112,14 +128,267 @@
 
 
 
+<div class="parallax-window-3" data-parallax="scroll" data-image-src="img/PartyFireworksCompressed.png">
+		<div class = "col-xs-12" id= "opening_text" style="top: 25%;">
+			<div id= "text_container">THE PERFECT PARTY</div>
+		</div>
+	</div>
 
+<div id= "About_Us" class= "container col-xs-12" style="margin-bottom: 10px;">
+		<h1>A PACKAGE FOR EVERYONE</h1>
+	</div>
+
+<!-- PARTY PACKAGES GRID -->
+
+
+	<div class= "container attractionbox col-sm-12" style= "height: 400px">
+
+			<div class= "row">
+
+				<div class="col-sm-6 col-xs-12 piccontainer" style= "height: 400px;" >
+
+					<img class="img-responsive" src= "img/CompressedUltimateGamerPic.png" alt= "gamer picture" >
+
+				</div>
+
+				<div class="col-sm-6 col-xs-12 textcontainer" style= "height: 400px">
+
+						<div class="Reservations_Marketing">
+
+						<h1>Ultimate Gamer Package</h1>
+						<h3>We have over 75 state-of-the-art arcade games for people of all ages to enjoy. Fly a fighter jet or even shoot some zombies! Earn tickets to spend at our
+						prize counter and win amazing gifts.</h3>
+						<h3> Bring up to 15 people<br><br><br>
+						Cost: $70.00
+						</h3>
+
+						</div>
+
+				</div>
+
+			</div>
+
+
+			<div class= "row">
+
+				<div class="col-sm-6 col-xs-12 textcontainer" style= "height: 400px">
+
+						<div class="Reservations_Marketing">
+
+						<h1>Bowling and Mini Golf Package</h1>
+						<h3>Have an absolute blast with our jaw dropping mini golf course and space themed bowling lanes. </h3>
+						<h3> Bring up to 20 people<br><br><br>
+						Cost: $100.00
+						</h3>
+
+						</div>
+
+				</div>
+
+				<div class="col-sm-6 col-xs-12 piccontainer" style= "height: 400px;" >
+
+					<img class="img-responsive" src= "img/MiniGolf.png" alt= "gamer picture" >
+
+				</div>
+
+			</div>
+
+			<div class= "row">
+
+				<div class="col-sm-6 col-xs-12 piccontainer" style= "height: 400px;" >
+
+					<img class="img-responsive" src= "img/LaserTag.png" alt= "gamer picture" >
+
+				</div>
+
+				<div class="col-sm-6 col-xs-12 textcontainer" style= "height: 400px">
+
+						<div class="Reservations_Marketing">
+
+						<h1>Paintball and Laser Tag Package</h1>
+						<h3>Experience our award winning custom space paintball fields along with our incredible laser tag arena.</h3> 
+						<h3>Bring up to 30 people <br><br><br>
+						Cost: $120.00
+						</h3>
+
+						</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+ <!-- FULL CALENDAR HTML
   <div class="calendarContainer">
 
-    <div class="calendar" id='calendar'></div>
+   <div class="calendar" id='calendar' style="width:50%;"></div>  
 
   </div>
+-->
 
 
+  <div id= "About_Us" class= "container col-xs-12" style="margin-top: 800px;">
+		<h1>MAKE YOUR RESERVATION</h1>
+	</div>
+
+<div class= "sagenda-container" style= "align-items: center;">
+<iframe src="https://sagenda.net/Frontend/58a3de27728fd39db80710c4?retrieveFromCookies=False" width="1050" height="1200" frameborder="0" allowtransparency="true" style= "align-content: center;" ></iframe>
+</div>
+
+<!-- FORM
+
+
+	<div class= "reservationForm">
+		<div class= "resformSideSpace col-md-4"></div> 
+		<div class= "resform_container col-md-4">
+				
+				
+				<form  action="action_page.php">
+						
+					<div class="first_container" >
+						<label >First Name</label>
+						<input type="text" class="fname" name="firstname">
+					</div>
+					
+					<div class= "last_container"style= >
+						<label>Last Name</label>
+						<input type="text" class="lname" name="lastname">
+					</div>
+					
+					<div class="email_container" >
+						<label>Email</label>
+						<input type="text" class="email" name="firstname">
+					</div>
+					
+					<div class="PhoneResForm_container" >
+						<label>Phone Number</label>
+						<input type="tel" class="phone" name="phonenumber">
+					</div>
+					
+					<div class="PartyResForm_container" >
+						<label>Party Package</label>
+						<select class="phone" name="phonenumber">
+							<option value="PartyPack1">Party Package 1</option>
+							<option value="PartyPack2">Party Package 2</option>
+							<option value="PartyPack3">Party Package 3</option>
+							<option value="PartyPack4">Party Package 4</option>
+						</select>
+					</div>
+					<input type="submit" value="Submit" id= "submit_button">
+					
+				</form>
+	
+			</div>
+		<div class= "resformSideSpace col-md-4"></div>
+	</div>
+
+
+-->
+
+
+
+<div class= "footer container col-xs-12">
+	<div class="formBufferSpace" style="height:50px;"></div>
+		<div class= "row">
+		
+			
+		
+			<div class= "footer_links col-sm-4" >
+		
+			<a class="two" href="index.html"><h6>Home</h6></a>
+			<a class="two" href="attractions.html"><h6>Attractions</h6></a>
+			<a class="two" href="reservations.html"><h6>Reservations</h6></a>
+			<a class="two" href="snackbar.html"><h6>Snackbar</h6></a>
+			<a class="two" href="contactus.html"><h6>Contact Us</h6></a>				
+			</div>
+		
+		
+			<div class= "footer_media col-sm-4">
+				
+				<div class= "row">
+				
+					<div class= "media_icon_container col-xs-3">
+						
+						<a href="https://www.instagram.com/cosmosfec/?hl=en"><img src="img/instagram.png" alt="instagram" style= "width: 50px;"></img></a>
+						
+					
+						
+					</div>
+					
+					<div class= "media_icon_container col-xs-3">
+						
+						<a href="https://www.facebook.com/search/top/?q=cosmos%20family%20entertainment%20center"><img src="img/facebook.png" alt="instagram" style= "width: 50px;"></img></a>
+						
+					</div>
+					
+					<div class= "media_icon_container col-xs-3">
+						
+						<a href="https://twitter.com/CosmosFec"><img src="img/twitter.png" alt="instagram" style= "width: 50px;"></img></a>
+						
+					</div>
+					
+					<div class= "media_icon_container col-xs-3">
+						
+						<a href="https://plus.google.com/105896305869198218545"><img src="img/google.png" alt="instagram" style= "width: 50px;"></img></a>
+						
+					</div>
+					
+				
+				</div>
+		
+			</div>
+		
+		
+		
+			<div class= "footer_hours col-sm-4">
+			
+			<h6> Hours of Operation</h6>
+				
+				
+		<table class="Hours_Table">
+			<tbody>
+				<tr>
+					<td>Monday-Thursday</td>
+					<td>10am - 10pm</td>
+				</tr>
+				<tr>
+					<td>Friday</td>
+					<td>10am - 11pm</td>
+				</tr>
+				<tr>
+					<td>Saturday</td>
+					<td>10am - 12pm</td>
+				</tr>
+				<tr>
+					<td style="border-bottom-style: none;">Sunday</td>
+					<td style="border-bottom-style: none;">9am - 10pm</td>
+				</tr>
+			</tbody>
+		</table>
+
+				
+			</div>
+		
+		</div>
+	
+	</div>
+
+	
+
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+<script src="dependencies/parallax.min.js"></script>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.4/SmoothScroll.min.js"></script>		
+	<!-- Latest compiled and minified JavaScript (j.query) -->
+	
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
+	
+	<!-- Latest compiled and minified JavaScript -->
+	
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 
 </body>
