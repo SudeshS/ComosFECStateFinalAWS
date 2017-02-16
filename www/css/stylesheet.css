@@ -833,6 +833,15 @@ input[type=submit] {
 	border-radius: 3px;
 }
 
+.time_buttons_disabled {
+	pointer-events: none;
+	filter: grayscale();
+}
+
+#dateSelected {
+	text-align: center;
+}
+
 @font-face {
 	font-family: Stellar-light;
 	src: url(../fonts/Stellar-light.otf);

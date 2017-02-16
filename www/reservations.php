@@ -3,6 +3,13 @@
 
 
     $SelectedDate = $_POST['SelectedDate'];
+    $firstName = $_POST["firstname"];
+    $lastName = $_POST["lastname"];
+    $email = $_POST["email"];
+    $phoneNumber = $_POST["phonenumber"];
+    $partyPackage = $_POST["partynumber"];
+    $reservedTimeslot = $_POST["reservedtimeslot"];
+
 
 echo $SelectedDate;
 
@@ -23,4 +30,6 @@ echo $SelectedDate;
     echo null;
  }
 
-?>
+$query = "INSERT INTO reservations VALUES ('$SelectedDate', '$email', '$lastName', '$firstName', '$phoneNumber', '$partyPackage', '$reservedTimeslot')";
+
+?> 

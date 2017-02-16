@@ -27,7 +27,7 @@
           <link rel= 'stylesheet' href= 'dependencies/fullcalendar-master/src/main.css' />
   -->
   <script type= "text/javascript">
- /* $.noConflict();
+  $.noConflict();
   jQuery( document ).ready(function( $ ) {
 	
 		$(document).ready(function() {
@@ -53,16 +53,37 @@
 
 					clientSelectedDate = date.format();
 
-				/*	$.ajax({url:"reservations.php", method:"POST", async:false,
+					$.ajax({url:"reservations.php", method:"POST", async:false,
 							data:{SelectedDate: clientSelectedDate}, success : function(json_array){
 								if (json_array == null) {
 									return;
 								}
-								else {
+								else  {
+
+ 										for (let x = 0; x < 6; x++) {
+												switch (json_array[x]["date"]) {
+												case "10:00 AM" : $("#10").css("time_buttons_disabled"); break;
+												
+												case "12:00 PM" : $("#12").css("time_buttons_disabled"); break;
+												
+												case "2:00 PM" : $("#2").css("time_buttons_disabled"); break;
+												
+												case "4:00 PM" : $("#4").css("time_buttons_disabled"); break;
+												
+												case "6:00 PM" : $("#6").css("time_buttons_disabled"); break;
+												
+												case "8:00 PM" : $("#8").css("time_buttons_disabled"); break;
+												
+												default: break;
+									
+									}
+									
+									}
+									}
 
 							}
 					});
-				*/	
+					
 					$('#dateSelected').text(clientSelectedDate);
 
 				},
@@ -172,8 +193,8 @@
 						prize counter and win amazing gifts.</h3>
 						<h3> Bring up to 15 people and enjoy 30% off all games for 2 hours</h3>
 						<h3> Includes two large one topping pizzas </h3>
-						Cost: $140.00
-						</h3>
+						<h3> Cost: $140.00</h3>
+						
 
 						</div>
 
@@ -203,7 +224,7 @@
 						<h3> Bring up to 20 people and enjoy unlimited access for 2 hours</h3>
 						<h3> Includes three large one topping pizzas</h3>
 						<h3>Cost: $180.00</h3>
-						</h3>
+						
 
 						</div>
 
@@ -227,8 +248,8 @@
 						<h3>Experience our award winning custom space paintball fields along with our incredible laser tag arena.</h3> 
 						<h3>Bring up to 30 people and enjoy unlimited ammo for a whole hour </h3>
 						<h3> Includes four large one topping pizzas</h3>
-						Cost: $240.00
-						</h3>
+						<h3>Cost: $240.00</h3>
+						
 
 						</div>
 
@@ -238,18 +259,18 @@
 
 		</div>
 
-<!--
+
 
 
   <div class="calendarContainer container col-xs-12" style= "margin-top: 50px;">
 <div class= "row">
-	<div id= "dateSelected"></div>
+	
 	</div>
 	<div class= "row">
    
    
 		<div class= "col-sm-6">
-	
+	<div id= "dateSelected"></div>
 			<div class="calendar" id='calendar' style="width: 100%;"></div>  
    
 		</div>
@@ -259,7 +280,7 @@
 			<div class= "row Top_Row">
 			
 			
-				<div class= "col-xs-4 Top_Buttons">
+				<div id= "allbuttons" class= "col-xs-4 Top_Buttons">
 				
 				
 					<button id="10" class= "time_buttons" >10:00 AM</button>
@@ -267,7 +288,7 @@
 				
 				</div>
 			
-				<div class= "col-xs-4 Top_Buttons">
+				<div id= "allbuttons" class= "col-xs-4 Top_Buttons">
 				
 				
 					<button id="12" class= "time_buttons" >12:00 PM</button>
@@ -276,7 +297,7 @@
 				
 				</div>
 				
-				<div class= "col-xs-4 Top_Buttons">
+				<div id= "allbuttons" class= "col-xs-4 Top_Buttons">
 				
 				
 					<button id="2" class= "time_buttons" >2:00 PM</button>
@@ -292,7 +313,7 @@
 			
 				
 				
-				<div class= "col-xs-4 Top_Buttons">
+				<div id= "allbuttons" class= "col-xs-4 Top_Buttons">
 				
 				
 					<button id="4" class= "time_buttons" >4:00 PM</button>
@@ -300,7 +321,7 @@
 				
 				</div>
 			
-				<div class= "col-xs-4 Top_Buttons">
+				<div id= "allbuttons" class= "col-xs-4 Top_Buttons">
 				
 				
 					<button id="6" class= "time_buttons" >6:00 PM</button>
@@ -309,7 +330,7 @@
 				
 				</div>
 				
-				<div class= "col-xs-4 Top_Buttons">
+				<div id= "allbuttons" class= "col-xs-4 Top_Buttons">
 				
 				
 				
@@ -329,7 +350,7 @@
 
   </div>
 
--->
+
 
 
 
@@ -338,24 +359,24 @@
 	</div>
 
 
-
+<!-- SAGENDA
 
 <div class= "sagenda-container col-xs-12" style= "align-items: center;">
 <iframe src="https://sagenda.net/Frontend/58a3de27728fd39db80710c4?retrieveFromCookies=False" width="1050" height="1200" frameborder="0" allowtransparency="true" ></iframe>
 </div>
 
 
+-->
 
 
 
-<!--
 
 	<div class= "reservationForm">
 		<div class= "resformSideSpace col-md-4"></div> 
 		<div class= "resform_container col-md-4">
 				
 				
-				<form  action="action_page.php">
+				<form  action="reservations.php">
 						
 					<div class="first_container" >
 						<label >First Name</label>
@@ -369,34 +390,41 @@
 					
 					<div class="email_container" >
 						<label>Email</label>
-						<input type="text" class="email" name="firstname">
+						<input type="text" class="email" name="email">
 					</div>
 					
 					<div class="PhoneResForm_container" >
 						<label>Phone Number</label>
-						<input type="tel" class="phone" name="phonenumber">
+						<input type="text" class="phone" name="phonenumber">
 					</div>
 					
 					<div class="PartyResForm_container" >
 						<label>Party Package</label>
-						<select class="phone" name="phonenumber">
-							<option value="PartyPack1">Party Package 1</option>
-							<option value="PartyPack2">Party Package 2</option>
-							<option value="PartyPack3">Party Package 3</option>
-							<option value="PartyPack4">Party Package 4</option>
+						<select class="phone" name="partypackage">
+							<option value="PartyPack1">Ultimate Gamer Package</option>
+							<option value="PartyPack2">Bowling and Mini Golf Package</option>
+							<option value="PartyPack3">Paintball and Laser Tag Package</option>
 						</select>
 					</div>
+
+					<div class="restimeslot_container" >
+						<label>Time Slot:  </label>
+						<input name="reservedtimeslot" readonly>
+					</div>
+
 					<input type="submit" value="Submit" id= "submit_button">
 					
 				</form>
 	
 			</div>
-		<div class= "resformSideSpace col-md-4"></div>
+		<div class= "resformSideSpace col-md-4">
+				<div id= "timeSlotSelected"></div>
+		</div>
 	</div>
 
 
 
--->
+
 
 
 <div class= "footer container col-xs-12">
@@ -486,6 +514,22 @@
 	</div>
 
 	
+	<script type= "text/javascript">
+		
+		var timeSelected;
+		$("button").click(function() {
+			
+				alert(this.id);
+				timeSelected= $(this).attr("id").innerHTML.select();
+				$('#timeSlotSelected').text(timeSelected);
+
+			
+		});
+
+		
+
+
+	</script>
 
 
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
