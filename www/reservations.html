@@ -516,13 +516,13 @@
 	
 	<script type= "text/javascript">
 		
-		var timeSelected;
+		
 		$("button").click(function() {
-			
-				alert(this.id);
-				timeSelected= $(this).attr("id").innerHTML.select();
+			var timeSelected;
+			//	alert($(this).attr('id'));
+				timeSelected= $(this).attr('id').innerHTML.select();
 				$('#timeSlotSelected').text(timeSelected);
-
+				alert(timeSelected.val());
 			
 		});
 
