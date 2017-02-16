@@ -1,18 +1,12 @@
 <?php
-   include "../inc/dbinfo.inc";
-   
-/* Connect to MySQL and select the database. */
-  $connection = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD);
-  if (mysqli_connect_errno()) echo "Failed to connect to MySQL: " . 
-mysqli_connect_error();
-  $database = mysqli_select_db($connection, DB_DATABASE);
+  $db = pg_connect("host=ec2-54-235-248-197.compute-1.amazonaws.com port=5432 dbname=d2ecrfaqgg9aod user=eyyhoduuszkxsy password=27a645e9026d524ae7732ad46f824db68f7a83237b43db80a67adeae71b90241");
 
 
     $SelectedDate = $_POST['SelectedDate'];
 
- $sql =  'SELECT ResTimeSlot FROM Reservations_Info_DB WHERE Reservation_Date="$SelectedDate"';
+ $query=  "SELECT reservedtimeslot FROM reservations WHERE date ="$SelectedDate"";
 
- $result = $connection->query($sql);
+ $result = pg_query($query); 
 
 
  if ($result->num_rows >0) {

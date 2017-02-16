@@ -582,12 +582,9 @@ table.Hours_Table td {
 
 .form_container {
 	text-align: center;
-	height: 400px;
+	
 }
 
-form {
-	height: 400px;
-}
 
 .first_container{
 	margin-top: 20px;
