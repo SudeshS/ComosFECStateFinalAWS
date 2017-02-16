@@ -6,11 +6,19 @@
 
  $query=  "SELECT reservedtimeslot FROM reservations WHERE date ="$SelectedDate"";
 
- $result = pg_query($query); 
+ $result = pg_query($db, $query); 
 
 
  if ($result->num_rows >0) {
-     
+  $timeslots= array();
+   while ($r=pg_fetch_assoc($result)) {
+     $timeslots[] = $r ;
+   } 
+   echo json_encode($timeslots);
+ }
+
+ else {
+    echo null;
  }
 
 ?>
