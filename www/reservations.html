@@ -27,7 +27,7 @@
           <link rel= 'stylesheet' href= 'dependencies/fullcalendar-master/src/main.css' />
   -->
   <script type= "text/javascript">
-  $.noConflict();
+ /* $.noConflict();
   jQuery( document ).ready(function( $ ) {
 	
 		$(document).ready(function() {
@@ -53,15 +53,17 @@
 
 					clientSelectedDate = date.format();
 
-					$.ajax({url:"reservations.php", method:"POST", async:false,
+				/*	$.ajax({url:"reservations.php", method:"POST", async:false,
 							data:{SelectedDate: clientSelectedDate}, success : function(json_array){
 								if (json_array == null) {
 									return;
 								}
-								else 
+								else {
+
 							}
 					});
-					
+				*/	
+					$('#dateSelected').text(clientSelectedDate);
 
 				},
 
@@ -149,7 +151,7 @@
 
 <!-- PARTY PACKAGES GRID -->
 
-<!--
+
 
 	<div class= "container reservationbox col-sm-12" >
 
@@ -236,11 +238,13 @@
 
 		</div>
 
--->
+<!--
 
 
-  <div class="calendarContainer container col-xs-12">
-
+  <div class="calendarContainer container col-xs-12" style= "margin-top: 50px;">
+<div class= "row">
+	<div id= "dateSelected"></div>
+	</div>
 	<div class= "row">
    
    
@@ -325,26 +329,26 @@
 
   </div>
 
+-->
 
 
-<!--  RESERVATION TITLE
 
   <div id= "About_Us" class= "container col-xs-12" style= "margin-bottom: 10px; clear:both;">
 		<h1>MAKE YOUR RESERVATION</h1>
 	</div>
--->
 
-<!-- SAGENDA
+
+
 
 <div class= "sagenda-container col-xs-12" style= "align-items: center;">
 <iframe src="https://sagenda.net/Frontend/58a3de27728fd39db80710c4?retrieveFromCookies=False" width="1050" height="1200" frameborder="0" allowtransparency="true" ></iframe>
 </div>
 
 
--->
 
-<!--  FORM
 
+
+<!--
 
 	<div class= "reservationForm">
 		<div class= "resformSideSpace col-md-4"></div> 
@@ -391,8 +395,8 @@
 	</div>
 
 
--->
 
+-->
 
 
 <div class= "footer container col-xs-12">
