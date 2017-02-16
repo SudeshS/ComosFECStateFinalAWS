@@ -12,6 +12,6 @@ $query = "INSERT INTO contactus VALUES ('$firstName', '$lastName', '$email', '$m
 $result = pg_query($db, $query); 
 
 
-header("Location: http://cosmosfec.ga/contactus.html“);
+header("Location: http://cosmosfec.ga/contactus.html");
 
 ?>
