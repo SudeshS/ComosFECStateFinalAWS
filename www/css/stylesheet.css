@@ -796,19 +796,41 @@ input[type=submit] {
 
 .reservationbox {
 	margin-top: 10px;
-	border: solid orange 1px;
 }
 
 .piccontainer {
-	border: solid orange 1px;
 	padding: 0px;
 }
 
 .restextcontainer {
-	border: solid orange 1px;
 	text-align: center;
 	padding: 50px;
 }
+
+.Top_Row {
+	margin-top: 100px;
+}
+
+.Top_Buttons {
+	padding: 50px;
+}
+
+.time_buttons {
+	background-color: #ff6600;
+    border: none;
+    color: black;
+	font-family: 'Stellar-light', sans-serif;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;	
+	border-radius: 3px;
+}
+
+
 
 
 @font-face {
@@ -932,10 +954,15 @@ input[type=submit] {
 	}
 	
 	.long_attraction_text {
-		
 		font-size: 30px;
-
-		
+	}
+	
+	.Top_Buttons {
+		padding: 0px;
+	}
+	
+	.Top_Row {
+		margin-top: 20px;
 	}
 }
 	
