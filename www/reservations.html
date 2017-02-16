@@ -54,7 +54,12 @@
 					clientSelectedDate = date.format();
 
 					$.ajax({url:"reservations.php", method:"POST", async:false,
-							data:{SelectedDate: clientSelectedDate}
+							data:{SelectedDate: clientSelectedDate}, success : function(json_array){
+								if (json_array == null) {
+									return;
+								}
+								else 
+							}
 					});
 					
 
@@ -250,7 +255,7 @@
 				<div class= "col-xs-4 Top_Buttons">
 				
 				
-					<button class= "time_buttons" >10:00 AM</button>
+					<button id="10" class= "time_buttons" >10:00 AM</button>
 				
 				
 				</div>
@@ -258,7 +263,7 @@
 				<div class= "col-xs-4 Top_Buttons">
 				
 				
-					<button class= "time_buttons" >12:00 PM</button>
+					<button id="12" class= "time_buttons" >12:00 PM</button>
 				
 				
 				
@@ -267,7 +272,7 @@
 				<div class= "col-xs-4 Top_Buttons">
 				
 				
-					<button class= "time_buttons" >2:00 PM</button>
+					<button id="2" class= "time_buttons" >2:00 PM</button>
 				
 				
 				
@@ -283,7 +288,7 @@
 				<div class= "col-xs-4 Top_Buttons">
 				
 				
-					<button class= "time_buttons" >4:00 PM</button>
+					<button id="4" class= "time_buttons" >4:00 PM</button>
 				
 				
 				</div>
@@ -291,7 +296,7 @@
 				<div class= "col-xs-4 Top_Buttons">
 				
 				
-					<button class= "time_buttons" >6:00 PM</button>
+					<button id="6" class= "time_buttons" >6:00 PM</button>
 				
 				
 				
@@ -301,7 +306,7 @@
 				
 				
 				
-					<button class= "time_buttons" >8:00 PM</button>
+					<button id="8" class= "time_buttons" >8:00 PM</button>
 				
 				
 				
