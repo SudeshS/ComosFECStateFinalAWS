@@ -6,7 +6,7 @@
 
 echo $SelectedDate;
 
- $query=  "SELECT reservedtimeslot FROM reservations WHERE date ="$SelectedDate"";
+ $query=  "SELECT reservedtimeslot FROM reservations WHERE date ='$SelectedDate'";
 
  $result = pg_query($db, $query); 
 
