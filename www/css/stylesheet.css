@@ -733,9 +733,8 @@ input[type=submit] {
 }
 
 .img-responsive {
-	max-width: 100%;
-	height: 400px;
-	padding: 10px;
+	width: 100%;
+	
 }
 
 .PhoneResForm_container{
@@ -776,7 +775,7 @@ input[type=submit] {
 
 .Reservations_Marketing > h3 {
 	font-family: 'Stellar-light', sans-serif;
-	font-size: 25px;
+	font-size: 10px;
 	color: black;
 	font-weight: 500;
 	padding: 10px;
@@ -785,13 +784,30 @@ input[type=submit] {
 .Reservations_Marketing > h1::after {
 	display: block;
 	content: '';
-	width: 100%;
+	width: 50%;
 	height: 3px;
 	background: #ff6600;
 	position: relative;
+	left:25%;
 	margin-top: 15px;
 	bottom: 0;
 	align-content: center;
+}
+
+.reservationbox {
+	margin-top: 10px;
+	border: solid orange 1px;
+}
+
+.piccontainer {
+	border: solid orange 1px;
+	padding: 0px;
+}
+
+.restextcontainer {
+	border: solid orange 1px;
+	text-align: center;
+	padding: 50px;
 }
 
 
@@ -917,7 +933,8 @@ input[type=submit] {
 	
 	.long_attraction_text {
 		
-		font-size: 40px;
+		font-size: 30px;
+
 		
 	}
 }
